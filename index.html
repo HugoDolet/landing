@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation - Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .images-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    .images-container img {
+      height: 300px;
+      object-fit: cover;
+    }
+    h1 {
+      color: blue;
+    }
+    h2 {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Hôtels</a></li>
+        <li><a href="#">Appartements</a></li>
+        <li><a href="#">Villas</a></li>
+        <li><a href="#">Resorts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div>
+        <h1>Réservez votre séjour</h1>
+        <p>Choisissez votre destination et trouvez le meilleur hébergement pour vos vacances.</p>
+      </div>
+      <div class="images-container">
+        <h1>Port Saplaya</h1>
+        <p>La meilleure destination pour vos vacances!</p>
+        <img src="https://cdn1.yumping.com/emp/fotos/5/2/8/5/6/tb_pre-52856-portsaplaya2.jpg" alt="Port Saplaya">
+      </div>
+      <div class="images-container">
+    <img src="https://www.expat-valencia.com/wp-content/uploads/2020/07/Port-Saplaya-Tours-1024x576.jpg">
+      </div>
+    </section> 
+    
+    <section>
+      <form>
+        <h2>Recherche</h2>
+        <label for="destination">Destination :</label>
+        <input type="text" id="destination" name="destination" placeholder="Entrez votre destination">
+
+        <label for="checkin">Arrivée :</label>
+        <input type="date" id="checkin" name="checkin">
+
+        <label for="checkout">Départ :</label>
+        <input type="date" id="checkout" name="checkout">
+
+        <label for="adults">Adultes :</label>
+        <select id="adults" name="adults">
+          <option value="1">1 adulte</option>
+          <option value="2">2 adultes</option>
+          <option value="3">3 adultes</option>
+          <option value="4">4 adultes</option>
+        </select>
+
+        <label for="children">Enfants :</label>
+        <select id="children" name="children">
+          <option value="0">0 enfant</option>
+          <option value="1">1 enfant</option>
+          <option value="2">2 enfants</option>
+          <option value="3">3 enfants</option>
+        </select>
+
+        <button type="submit">Rechercher</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Booking</p>
+  </footer>
+</body>
+</html>
